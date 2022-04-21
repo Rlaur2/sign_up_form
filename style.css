@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'motion';
+    src: url(./fonts/MotionPersonalUseBold-2O0od.ttf);
+}
+
 .background-image {
     width: 35vw;
     background-image: url(./images/tobias-reich-6LUZ4qTCugk-unsplash.jpg);
@@ -18,18 +23,35 @@
 }
 
 .image-header {
-    height: clamp(40px, 10vh, 10.1vh);
+    min-height: 40px;
     background-color: rgba(45,45,45,.4);
     width: 35vw;
     margin-top: 30vh;
     position: sticky;
     top: 146px;
+    display: flex;
+    font-family: 'motion';
+    font-size: clamp(1rem,6rem,6.1rem);
+    color: rgb(226, 183, 64);
+    justify-content: center;
+    overflow: hidden;
+}
+
+.image-header img {
+    max-width: 200px;
+    max-height: 10vh;
+}
+
+.brand-name {
+    margin-left: 50px;
+    margin-right: 70px;
 }
 
 .image-footer {
     margin: auto auto 0 auto;
     padding: 2px;
     color: azure;
+    overflow: hidden;
 }
 
 a {
