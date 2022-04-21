@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background-image {
+    width: 35vw;
+    background-image: url(./images/tobias-reich-6LUZ4qTCugk-unsplash.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: fixed;
+}
+
+.image-header {
+    height: clamp(40px, 10vh, 10.1vh);
+    background-color: rgba(45,45,45,.4);
+    width: 35vw;
+    margin-top: 30vh;
+    position: sticky;
+    top: 146px;
+}
+
+.image-footer {
+    margin: auto auto 0 auto;
+    padding: 2px;
+    color: azure;
+}
+
+a {
+    color:aquamarine
+}
+ 
+a:visited {
+     color: lightpink;
+}
+
