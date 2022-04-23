@@ -8,6 +8,11 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: lightgray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 @font-face {
     font-family: 'motion';
     src: url(./fonts/MotionPersonalUseBold-2O0od.ttf);
@@ -77,7 +82,6 @@ a:visited {
     font-size: 2rem;
     flex-flow: wrap;
     padding: 4rem 14rem 2rem 3rem;
-    background-color: lightgray;
 }
 
 .intro-text p {
@@ -110,14 +114,30 @@ a:visited {
     width: 20rem;
 }
 
+.inputs label {
+    font-family:'Courier New', Courier, monospace;
+}
+
 .inputs input {
     font-size: 1.6rem;
     border: 1px solid rgba(110,110,110, .2);
-    border-radius: 2%;
+    border-radius: 10px;
+    padding: 3px 3px 2px 6px;
 }
 
 .inputs input:focus {
-    border-radius: 0%;
+    outline: none;
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+
+.error {
+    border: 1px solid red !important;
+    border-radius: 10px;
+}
+
+.error-message {
+    color:red;
 }
 
 .log-in-section {
@@ -125,7 +145,7 @@ a:visited {
     width: 65vw;
     padding: 1rem 14rem 2rem 3rem;
     background-color: lightgray;
-    min-height: 28.26689895vh;
+    /*min-height: 28.26689895vh;*/
 }
 
 .button {
@@ -138,13 +158,11 @@ a:visited {
     align-items: center;
     border-radius: 5%;
     box-shadow: 1px 3px 5px -1px rgba(0,0,0,.4);
+    font-weight: bolder;
 }
 
 .member a {
     color: #233f4e;
     text-decoration: none;
-}
-
-.member a:visited {
-    color: #724e07;
+    font-weight: bold;
 }
