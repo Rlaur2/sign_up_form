@@ -1,4 +1,8 @@
-* {
+:root {
+    --deep-yellow: #fab21d;
+}
+
+*, em {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -32,7 +36,7 @@
     display: flex;
     font-family: 'motion';
     font-size: clamp(1rem,6rem,6.1rem);
-    color: rgb(226, 183, 64);
+    color: var(--deep-yellow);
     justify-content: center;
     overflow: hidden;
 }
@@ -62,3 +66,85 @@ a:visited {
      color: lightpink;
 }
 
+
+.intro {
+    margin-left: 35vw;
+    width: 65vw;
+    min-height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    flex-flow: wrap;
+    padding: 4rem 14rem 2rem 3rem;
+    background-color: lightgray;
+}
+
+.intro-text p {
+    margin-top: 2rem;
+}
+
+.form-section {
+    margin-left: 35vw;
+    width: 65vw;
+    min-height: 30vh;
+    padding: 1rem 14rem 2rem 3rem;
+    background-color: whitesmoke;
+    box-shadow: 1px 3px 5px -2px rgba(0,0,0,.4);
+}
+
+.form-header {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.inputs {
+    display: flex;
+    flex-flow: wrap;
+    gap: 3rem;
+}
+
+.inputs div {
+    display: flex;
+    flex-flow: column;
+    width: 20rem;
+}
+
+.inputs input {
+    font-size: 1.6rem;
+    border: 1px solid rgba(110,110,110, .2);
+    border-radius: 2%;
+}
+
+.inputs input:focus {
+    border-radius: 0%;
+}
+
+.log-in-section {
+    margin-left: 35vw;
+    width: 65vw;
+    padding: 1rem 14rem 2rem 3rem;
+    background-color: lightgray;
+    min-height: 28.26689895vh;
+}
+
+.button {
+    margin: 3rem 0;
+    width: 200px;
+    height: 45px;
+    background-color: var(--deep-yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    box-shadow: 1px 3px 5px -1px rgba(0,0,0,.4);
+}
+
+.member a {
+    color: #233f4e;
+    text-decoration: none;
+}
+
+.member a:visited {
+    color: #724e07;
+}
